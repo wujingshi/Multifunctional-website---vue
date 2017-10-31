@@ -1,0 +1,25 @@
+<template>
+  <div>
+     <yd-layout>
+       <!-- 头部 -->
+        <yd-navbar title="我是头部"></yd-navbar>
+      <!-- 中间 -->
+      <div style="height: 100%;">
+        <router-view></router-view>
+      </div>
+      <!-- 底部 -->
+        <yd-tabbar slot="tabbar">
+            <yd-tabbar-item title="首页" link="home" active>
+                <yd-icon name="home" slot="icon"></yd-icon>
+            </yd-tabbar-item>
+            <yd-tabbar-item title="购物车" link="music">
+                <yd-icon name="shopcart-outline" slot="icon"></yd-icon>
+            </yd-tabbar-item>
+            <yd-tabbar-item title="个人中心" link="#">
+                <yd-icon name="ucenter-outline" slot="icon"></yd-icon>
+            </yd-tabbar-item>
+        </yd-tabbar>
+
+    </yd-layout>
+  </div>
+</template>
