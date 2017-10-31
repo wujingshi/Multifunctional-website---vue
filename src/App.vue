@@ -1,14 +1,13 @@
 <template>
   <div>
      <yd-layout>
-       <!-- 头部 -->
-        <yd-navbar title="我是头部"></yd-navbar>
+
       <!-- 中间 -->
       <div style="height: 100%;">
         <router-view></router-view>
       </div>
       <!-- 底部 -->
-        <yd-tabbar slot="tabbar">
+        <yd-tabbar slot="tabbar" style="">
             <yd-tabbar-item title="首页" link="home" active>
                 <yd-icon name="home" slot="icon"></yd-icon>
             </yd-tabbar-item>
@@ -23,3 +22,10 @@
     </yd-layout>
   </div>
 </template>
+
+<style>
+.yd-tabbar-icon{
+  height: 1.5rem;
+}
+</style>
+
