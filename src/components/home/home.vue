@@ -1,7 +1,7 @@
 <template>
   <div>
       <!-- 头部 -->
-        <yd-navbar title="我是头部" style="height: 2rem;font-size: 1rem;"></yd-navbar>
+        <yd-navbar title="我是头部" ></yd-navbar>
       <!-- 轮播 -->
       <yd-slider autoplay="3000">
         <yd-slider-item>
@@ -47,7 +47,7 @@
             <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
             <span slot="text">随机音乐</span>
         </yd-grids-item>
-        <yd-grids-item>
+        <yd-grids-item link="/nba">
             <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
             <span slot="text">NBA赛事</span>
         </yd-grids-item>
@@ -80,18 +80,18 @@
     .yd-grids-2{
         margin-top: 0.5rem;
     }
-    .yd-grids-item{
+    /* .yd-grids-item{
         font-size: 0.8rem;
     }
     .yd-grids-icon{
         height: 4rem;
-    }
+    } */
     /* 头部 */
-  .yd-navbar-center-box{
+  /* .yd-navbar-center-box{
     height: 2rem !important;
     font-size: 1rem;
     line-height: 1rem;
-  }
+  } */
 </style>
 
 

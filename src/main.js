@@ -5,11 +5,13 @@ import App from './App'
 import router from './router/index.js'
 import YDUI from 'vue-ydui'
 
+
 Vue.config.productionTip = false
 
 Vue.use(YDUI)
 // 引入第三方文件
 import 'vue-ydui/dist/ydui.rem.css'
+
 
 /* eslint-disable no-new */
 new Vue({
