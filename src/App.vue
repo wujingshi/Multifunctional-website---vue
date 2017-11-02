@@ -7,7 +7,7 @@
         <router-view></router-view>
       </div>
       <!-- 底部 -->
-        <yd-tabbar slot="tabbar">
+        <yd-tabbar slot="tabbar" fixed>
             <yd-tabbar-item title="首页" link="home" active>
                 <yd-icon name="home" slot="icon"></yd-icon>
             </yd-tabbar-item>
@@ -29,6 +29,6 @@
 } */
 </style>
 <script>
-    import './assets/js/ydui.flexible.js'
+import "./assets/js/ydui.flexible.js";
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
       <!-- 头部 -->
-        <yd-navbar title="我是头部" ></yd-navbar>
+        <yd-navbar title="我是头部"></yd-navbar>
       <!-- 轮播 -->
       <yd-slider autoplay="3000">
         <yd-slider-item>
@@ -48,7 +48,7 @@
             <span slot="text">随机音乐</span>
         </yd-grids-item>
         <yd-grids-item link="/nba">
-            <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
+            <img slot="icon" src="../../assets/img/nba.jpg">
             <span slot="text">NBA赛事</span>
         </yd-grids-item>
         <yd-grids-item>
@@ -72,22 +72,22 @@
 </template>
 
 <style>
-    /* 公告 */
-    .yd-rollnotice-align-left {
-        padding-left: 90px;
-    }
-    /* 内容 */
-    .yd-grids-2{
-        margin-top: 0.5rem;
-    }
-    /* .yd-grids-item{
+/* 公告 */
+.yd-rollnotice-align-left {
+  padding-left: 90px;
+}
+/* 内容 */
+.yd-grids-2 {
+  margin-top: 0.5rem;
+}
+/* .yd-grids-item{
         font-size: 0.8rem;
     }
     .yd-grids-icon{
         height: 4rem;
     } */
-    /* 头部 */
-  /* .yd-navbar-center-box{
+/* 头部 */
+/* .yd-navbar-center-box{
     height: 2rem !important;
     font-size: 1rem;
     line-height: 1rem;
@@ -96,14 +96,13 @@
 
 
 <style scoped>
-    /* 公告图片 */
-    .rollImg{
-        position: absolute;
-        margin-top:6px;
-    }
-    .rollImg img{
-        height: 18px;
-    }
-    
+/* 公告图片 */
+.rollImg {
+  position: absolute;
+  margin-top: 6px;
+}
+.rollImg img {
+  height: 18px;
+}
 </style>
 
