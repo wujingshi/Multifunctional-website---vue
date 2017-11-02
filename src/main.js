@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/index.js'
 import YDUI from 'vue-ydui'
-
+import moment from 'moment'
 
 Vue.config.productionTip = false
 

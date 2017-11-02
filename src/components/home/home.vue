@@ -58,12 +58,12 @@
             <span slot="text">NBA赛事</span>
         </yd-grids-item>
         <yd-grids-item link="/today">
-            <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
+            <img slot="icon" src="../../assets/img/today.jpg">
             <span slot="text">当年今日</span>
         </yd-grids-item>
         <yd-grids-item link="/today">
             <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
-            <span slot="text">今日</span>
+            <span slot="text">天气预报</span>
         </yd-grids-item>
       </yd-grids-group>
   </div>
