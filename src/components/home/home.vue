@@ -25,6 +25,13 @@
         <div class="rollImg">
             <img src="../../assets/img/news-tit.png">
         </div>
+        <!-- 集成git -->
+      <!-- <div class="gitHub">
+          <a :href="git.html_url">
+              <img src="../../assets/img/github.png">
+              Star
+          </a>
+      </div> -->
         <!-- 公告内容 -->
       <yd-rollnotice autoplay="2000">
         <yd-rollnotice-item>
@@ -40,32 +47,23 @@
             欢迎来到本网站，觉得好请分享呗
         </yd-rollnotice-item>
       </yd-rollnotice>
-
       <!-- 内容 -->
       <yd-grids-group :rows="2">
-        <yd-grids-item>
-            <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
+        <yd-grids-item link="/music">
+            <img slot="icon" src="../../assets/img/music.jpg">
             <span slot="text">随机音乐</span>
         </yd-grids-item>
         <yd-grids-item link="/nba">
             <img slot="icon" src="../../assets/img/nba.jpg">
             <span slot="text">NBA赛事</span>
         </yd-grids-item>
-        <yd-grids-item>
+        <yd-grids-item link="/today">
             <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
-            <span slot="text">image</span>
+            <span slot="text">当年今日</span>
         </yd-grids-item>
-        <yd-grids-item>
+        <yd-grids-item link="/today">
             <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
-            <span slot="text">iconfont</span>
-        </yd-grids-item>
-        <yd-grids-item>
-            <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
-            <span slot="text">image</span>
-        </yd-grids-item>
-        <yd-grids-item>
-            <img slot="icon" src="http://static.ydcss.com/ydui/img/logo.png">
-            <span slot="text">iconfont</span>
+            <span slot="text">今日</span>
         </yd-grids-item>
       </yd-grids-group>
   </div>
@@ -80,18 +78,6 @@
 .yd-grids-2 {
   margin-top: 0.5rem;
 }
-/* .yd-grids-item{
-        font-size: 0.8rem;
-    }
-    .yd-grids-icon{
-        height: 4rem;
-    } */
-/* 头部 */
-/* .yd-navbar-center-box{
-    height: 2rem !important;
-    font-size: 1rem;
-    line-height: 1rem;
-  } */
 </style>
 
 
@@ -104,5 +90,49 @@
 .rollImg img {
   height: 18px;
 }
+/* github */
+/* .gitHub{
+    position: absolute;
+    background:black;
+    right: 3px;
+    width:1.3rem;
+    height: 0.51rem;
+    border-radius:10px;
+    color:#fff;
+    font-size:0.3rem;
+}
+.gitHub a{
+    width:1.3rem;
+    height: 0.51rem;
+    display:inline-block;
+    line-height: 0.51rem;
+    
+} */
 </style>
+
+
+<script>
+export default {
+  data(){
+      return {
+          git:[]
+      }
+  },
+  mounted(){
+
+  },
+  created(){
+      this.gitCommn()
+  },
+  methods:{
+      gitCommn(){
+          const gitUrl="https://api.github.com/repos/wujingshi/Multifunctional-website---vue"
+          this.$http.get(gitUrl).then(response=>{
+              this.git=response.body
+          })
+      }
+  }
+}
+</script>
+
 
